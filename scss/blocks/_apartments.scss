@@ -1,4 +1,17 @@
 .apartments {
+  position: relative;
+
+  &::before {
+    content: 'III';
+    position: absolute;
+    top: 0;
+    right: calc(50% + 555px);
+    transform: translate(50%, 0%);
+    font-family: $font-accent;
+    font-size: 400px;
+    line-height: 1.15;
+    opacity: 0.02;
+  }
 
   &__title {
     margin-bottom: 88px;

@@ -215,6 +215,18 @@ a:hover {
 
 .benefits {
   padding: 120px 0;
+  position: relative;
+}
+.benefits::after {
+  content: "II";
+  position: absolute;
+  top: 0;
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0%);
+  font-family: "Playfair Display", serif;
+  font-size: 400px;
+  line-height: 1.15;
+  opacity: 0.02;
 }
 .benefits__row {
   display: flex;
@@ -235,6 +247,20 @@ a:hover {
   line-height: 27px;
 }
 
+.apartments {
+  position: relative;
+}
+.apartments::before {
+  content: "III";
+  position: absolute;
+  top: 0;
+  right: calc(50% + 555px);
+  transform: translate(50%, 0%);
+  font-family: "Playfair Display", serif;
+  font-size: 400px;
+  line-height: 1.15;
+  opacity: 0.02;
+}
 .apartments__title {
   margin-bottom: 88px;
 }
@@ -361,6 +387,18 @@ a:hover {
 
 .video {
   text-align: center;
+  position: relative;
+}
+.video::after {
+  content: "IV";
+  position: absolute;
+  top: 0;
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0%);
+  font-family: "Playfair Display", serif;
+  font-size: 400px;
+  line-height: 1.15;
+  opacity: 0.02;
 }
 .video__link {
   position: relative;
@@ -394,10 +432,24 @@ a:hover {
 
 .maps {
   padding: 180px 0;
+  position: relative;
+}
+.maps::before {
+  content: "V";
+  position: absolute;
+  top: 180;
+  right: calc(50% + 555px);
+  transform: translate(50%, 0%);
+  font-family: "Playfair Display", serif;
+  font-size: 400px;
+  line-height: 1;
+  opacity: 0.02;
+  z-index: -1;
 }
 .maps__title {
   margin-bottom: 88px;
 }
+
 .map {
   height: 358px;
   background: #626262;
