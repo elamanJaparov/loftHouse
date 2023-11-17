@@ -219,14 +219,15 @@ a:hover {
 }
 .benefits::after {
   content: "II";
-  position: absolute;
-  top: 0;
   left: calc(50% + 555px);
   transform: translate(-50%, 0%);
+  position: absolute;
+  top: 0;
   font-family: "Playfair Display", serif;
   font-size: 400px;
   line-height: 1.15;
   opacity: 0.02;
+  z-index: -1;
 }
 .benefits__row {
   display: flex;
@@ -252,14 +253,15 @@ a:hover {
 }
 .apartments::before {
   content: "III";
-  position: absolute;
-  top: 0;
   right: calc(50% + 555px);
   transform: translate(50%, 0%);
+  position: absolute;
+  top: 0;
   font-family: "Playfair Display", serif;
   font-size: 400px;
   line-height: 1.15;
   opacity: 0.02;
+  z-index: -1;
 }
 .apartments__title {
   margin-bottom: 88px;
@@ -391,14 +393,15 @@ a:hover {
 }
 .video::after {
   content: "IV";
-  position: absolute;
-  top: 0;
   left: calc(50% + 555px);
   transform: translate(-50%, 0%);
+  position: absolute;
+  top: 0;
   font-family: "Playfair Display", serif;
   font-size: 400px;
   line-height: 1.15;
   opacity: 0.02;
+  z-index: -1;
 }
 .video__link {
   position: relative;
@@ -436,15 +439,17 @@ a:hover {
 }
 .maps::before {
   content: "V";
-  position: absolute;
-  top: 180;
   right: calc(50% + 555px);
   transform: translate(50%, 0%);
+  position: absolute;
+  top: 0;
   font-family: "Playfair Display", serif;
   font-size: 400px;
-  line-height: 1;
+  line-height: 1.15;
   opacity: 0.02;
   z-index: -1;
+  top: 180;
+  line-height: 1;
 }
 .maps__title {
   margin-bottom: 88px;

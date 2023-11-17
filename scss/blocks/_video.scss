@@ -4,14 +4,9 @@
 
   &::after {
     content: 'IV';
-    position: absolute;
-    top: 0;
     left: calc(50% + 555px);
     transform: translate(-50%, 0%);
-    font-family: $font-accent;
-    font-size: 400px;
-    line-height: 1.15;
-    opacity: 0.02;
+    @include decorNumber;
   }
 
   &__link {
