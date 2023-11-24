@@ -9,10 +9,19 @@
     @include decorNumber;
     top: 180;
     line-height: 1;
-  }`
+
+  }
+
+  @include mediaTablet {
+    padding: 90px 0px;
+  }
 
   &__title {
     margin-bottom: 88px;
+
+    @include mediaTablet {
+      margin-bottom: 44px;
+    }
   }
 }
 

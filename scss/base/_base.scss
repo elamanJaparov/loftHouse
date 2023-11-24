@@ -32,6 +32,10 @@ a {
     font-weight: 700;
     font-size: 36px;
     color: $accent;
+
+    @include mediaTablet {
+        font-size: 28px;
+    }
 }
 
 .link-bold {
@@ -39,6 +43,14 @@ a {
     color: $accent;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .none {
     display: none !important;
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }

@@ -13,6 +13,10 @@
       url('./../img/cta/cta-bg.jpg'), 
     #C4C4C4;
 
+    @include mediaTablet {
+      padding: 60px 0;
+    }
+
     &__title {
       margin-bottom: 17px;
     }
@@ -21,6 +25,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 30px;
+
+      @include mediaTablet {
+        grid-template-columns: 1fr;
+      }
     }
 
     &__text {
@@ -29,12 +37,20 @@
       p + p {
         margin-top: 1em;
       }
+
+      @include mediaTablet {
+        font-size: 14px;
+      }
     }
 
     &__form {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 35px 30px;
+
+      @include mediaTablet {
+        grid-template-columns: 1fr;
+      }
     }
 }
 

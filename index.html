@@ -11,7 +11,7 @@
 </head>
 <body>
     
-  <header class="header none1">
+  <header class="header none">
       <div class="header-top">
         <div class="container">
           <div class="header-top__row">
@@ -19,26 +19,30 @@
               <img src="./img/header/logo.svg" alt="Logo">
             </a>
   
-            <div class="header-menu">
-              <nav class="header-nav">
-                <ul class="header-nav__list">
-                  <li class="header-nav__item">
-                    <a class="header-nav__link" href="#">О комплексе</a>
-                  </li>
-                  <li class="header-nav__item">
-                    <a class="header-nav__link" href="#">Район</a>
-                  </li>
-                  <li class="header-nav__item">
-                    <a class="header-nav__link" href="#">Каталог квартир</a>
-                  </li>
-                  <li class="header-nav__item">
-                    <a class="header-nav__link" href="#">Ипотека</a>
-                  </li>
-                  <li class="header-nav__item">
-                    <a class="header-nav__link" href="#">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
+            <nav class="header-nav">
+              <ul class="header-nav__list">
+                <li class="header-nav__item">
+                  <a class="header-nav__link" href="#">О комплексе</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__link" href="#">Район</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__link" href="#">Каталог квартир</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__link" href="#">Ипотека</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header-nav__btn">
+              <button class="nav-icon-btn">
+                <div class="nav-icon"></div>
+              </button>
             </div>
           </div>
         </div>
@@ -60,16 +64,16 @@
       </div>
 
       <div class="header-bottom">
-        <div class="container">
+        <div class="text-right">
           <a href="#" class="header-bottom__info header-bottom__info-map">Наб. реки Фонтанки 10-15</a>
-          <a href="tel:+78121234567" class="header-bottom__info header-bottom__info-tel">8 (812) 123-45-67</a>
         </div>
+        <a href="tel:+78121234567" class="header-bottom__info header-bottom__info-tel">8 (812) 123-45-67</a>
     </div>
   </header>
 
   <main>
 
-    <section class="benefits none1">
+    <section class="benefits none">
       <div class="container container--sm">
         <div class="benefits__row">
 
@@ -105,7 +109,7 @@
       </div>
     </section>
 
-    <section class="apartments none1">
+    <section class="apartments none">
       <div class="container">
         <div class="apartments__title">
           <h2 class="title-2">Наши квартиры</h2>
@@ -136,7 +140,7 @@
       </div>
     </section>
 
-    <section class="cta none1">
+    <section class="cta none">
       <div class="container">
         <div class="cta__title">
           <h2 class="title-2">Хотите посмотреть?</h2>
@@ -150,7 +154,7 @@
           <form action="" class=" cta__form form">
             <input type="text" class="form__input" placeholder="Ваше имя">
             <input type="text" class="form__input" placeholder="Ваш телефон">
-            <p class="form__privacy">
+            <p class="form__privacy form__privacy--bottom">
               *Мы никому не передаем ваши данные.<br>И не сохраняем ваш номер в базу.
             </p>
             <button type="submit" class="form__btn">Посмотреть район</button>
@@ -160,7 +164,7 @@
       </div>
     </section>
 
-    <section class="video none1">
+    <section class="video none">
       <div class="container">
         <a href="#" class="video__link">
           <img src="./img/video/play.svg" alt="" class="video__icon">
@@ -169,7 +173,7 @@
       </div>
     </section>
 
-    <section class="maps none1">
+    <section class="maps none">
       <div class="container">
         <div class="maps__title">
           <h2 class="title-2">Район на карте</h2>
@@ -182,14 +186,14 @@
     </section>
 
 
-    <section class="feedback none1">
+    <section class="feedback none">
       <div class="container">
         <div class="feedback__title">
           <h2 class="title-2">Есть вопросы?</h2>
         </div>
 
         <form action="" class="feedback__form form">
-          <p class="form__privacy">
+          <p class="form__privacy form__privacy--bottom">
             *Мы никому не передаем ваши данные.<br>
             И не сохраняем ваш номер в базу.
           </p>
@@ -286,6 +290,9 @@
       </div>
     </div>
   </footer>
+
+
+  <script src="./js/main.js"></script>
 
 </body>
 </html>
